@@ -69,6 +69,26 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+
+    <plugins>
+        <!-- Другие плагины ... -->
+        <!-- Конфигурация Maven Compiler с использованием параметра release -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Используйте доступную версию плагина -->
+            <configuration>
+                <release>17</release> <!-- Указываем версию Java -->
+            </configuration>
+        </plugin>
+        <!-- Плагин Spring Boot -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+
     </build>
 
 </project>
